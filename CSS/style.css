@@ -1,20 +1,51 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display:block;
+}
+body{
+	line-height: 1;
+}
 body {
-	background-color:LightGray;
+	/*background-color:LightGray;*/
+	font-family:'Roboto', sans-serif;
+	-webkit-font-smoothing:antialiased;
 }
 div {
-	border: 1px solid Chocolate;
+	/*border: 1px solid Chocolate;*/
+}
+.content{
+	padding:0 0.938rem;
+	margin:0 auto;
+	min-width:37.5rem;
+}
+:focus{
+	outline:none;
+}
+ /* Navigation Section*/
+ .top-navigation{
+ 	background-color:#fff;
+ 	position:fixed;
+ 	width:100%;
+ 	border-bottom:1px solid #DDD;
+ 	z-index:9999;
+ }
+ .top-navigation > .content {
+ 	height:4.375rem;
+ }
+ .top-navigation.logo{
+ 	height:4.375rem;
+ }
+ .logo{
+	margin-left:16em;
 }
 .top-navigation .links {
     float: right;
-    font-family: 'Roboto', sans-serif;
     color: #838994;
-    font-size: 16px;
-    margin-top: 25px;
-    -webkit-font-smoothing: antialiased;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
 }
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 1.563rem;
 }
 .top-navigation .links .active {
     color: #4c5058;
@@ -32,15 +63,64 @@ html{
 	box-sizing: inherit;
 }
 .introduction {
-	background-image:();
+	background-image:url("../pictures/first-background.jpg");
 	background-position: center bottom;
-	background-size: cover;
+	background-size: cover; 
+	background-repeat:no-repeat;
 	height:45.938rem;
+	overflow:auto;
 }
-.big-button{
-	text-shadow: none;
-	border-style: none;
-	border-radius:4px;
-	padding: 16px 26px;
-	line-height: 1.33;
+.introduction h1,.introduction h3 {
+	color:white;
+	text-align:center;
+	font-weight:300;
+}
+
+.introduction h1 {
+     margin-top:17.5rem;
+     font-size:3.125rem;
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+.introduction .buttons{
+	color:white;
+	text-align:center;
+	margin-top:1.563rem;
+}
+.introduction .half{
+	width:49%;
+	padding:0 0.0938rem;
+	display:inline-block;
+	vertical-align:bottom;
+	font-size:1.125rem;
+	line-height:1.2;
+}
+
+.cases{
+	background-color:fff;
+	overflow:hidden;
+	padding-bottom:5rem;
+}
+.cases .content{
+	margin-top:7.785rem;
+	padding:none;
+	color:#1d1e21;
+	text-align:center;
+}
+.cases.devices>li{
+	width:33.3333333%;
+	float:left;
+}
+.cases.devices h3{
+	font-weight:400;
+	font-size:1.563rem;
+	margin:2.5rem 0px 1.875rem;
+}
+.cases.devices p{
+	font-weight:300;
+	font-size.313rem;
 }
